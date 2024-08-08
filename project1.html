@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Delight</title>
+    <link rel="stylesheet" href="project1.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="assets/gourmet_delight.png" alt="Gourmet Delight Logo">   
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero" style="background: url('assets/hero-section.jpg') no-repeat center center/cover;">
+        <div class="hero-content">
+            <h2>Welcome to Gourmet Delight</h2>
+            <p>Treats You’ll Service & Food You’ll Love</p>
+            <a href="#menu" class="btn">Explore Our Menu</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <h4>"27 Years Experience In
+                    <br>The Foodservice Industry"</h4>
+                <p>Gourmet Delight offers a fine dining experience with exquisite dishes crafted by our renowned chefs. Our restaurant provides a cozy atmosphere where you can enjoy delicious food with your loved ones.</p>
+                <p> A wide variety of sweet and savoury treats to suit your business and delight your customers.</p>
+                <p>From our prized pavlova to our magnificent mud cake, our range of creations will have your dessert menu covered.</p>
+                <p> To keep our treats fresh and minimise waste, they are pre-portioned and frozen.</p>
+                <p>As Priestley’s grows, we want to help your business grow with us as well by providing cake consultants and support with marketing, merchandising, training and more.</p>
+            </div>
+            <div class="about-image">
+                <img src="assets/about-us-section.jpg" alt="About Us">
+            </div>
+        </div>
+    </section>
+
+    <section id="menu">
+        <div class="menu-grid">
+            <div class="menu-item">
+                <img src="assets/menu1.jpg" alt="Menu Item">
+                <h3>Cheesecakes</h3>
+                <p>Our famous New York cheesecake with a generous swirl of blueberries and a brulee</p>
+                <p class="price">$20.00</p>
+            </div>
+            <div class="menu-item">
+                <img src="assets/menu2.jpg" alt="Menu Item">
+                <h3>Convenience</h3>
+                <p> A delicious slice of baked banana bread slice, individually wrapped.</p>
+                <p class="price">$40.00</p>
+            </div>
+            <div class="menu-item">
+                <img src="assets/menu3.jpg" alt="Menu Item">
+                <h3>Birthday Cake</h3>
+                <p>Celebrate with style. A delicious chocolate cake covered in rich dark chocolate ganache, decorated with white and dark chocolate flakes.</p>
+                <p class="price">$60.00</p>
+            </div>
+            <div class="menu-item">
+                <img src="assets/menu4.jpg" alt="Menu Item">
+                <h3>Grab & Go</h3>
+                <p>Melt in your mouth shortbread biscuits filled with vanilla icing.</p>
+                <p class="price">$80.00</p>
+            </div>
+            <div class="menu-item">
+                <img src="assets/menu5.jpg" alt="Menu Item">
+                <h3>Double Chocolate Muffin</h3>
+                <p>Rich and moist chocolate muffin with chocolate pieces throughout.</p>
+                <p class="price">$100.00</p>
+            </div>
+            <div class="menu-item">
+                <img src="assets/menu6.jpg" alt="Menu Item">
+                <h3>Pavlova & Dessert Sauces</h3>
+                <p>A round top pavlova for an individual dessert with wow factor.</p>
+                <p class="price">$120.00</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Get In Touch With Us​</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div class="contact-details">
+            <p>@gourmet_delight,2024</p>
+            <p></p>
+            </div>
+        </section>
+
+            <footer>
+                <div class="social-media">
+                    <a href="#"><img src="assets/facebook.png" alt="Facebook"></a>
+                    <a href="#"><img src="assets/whatshapp.png" alt="Whatshapp"></a>
+                    <a href="#"><img src="assets/insta.png" alt="Instagram"></a>
+                    <a href="#"><img src="assets/yt.png" alt="Youtube"></a>
+                    <p>Connect With Us</p>
+                </div>
+
+                <button class="back-to-top">Back to Top</button>
+            </footer>
+            <script>
+                // Optional JavaScript for sticky nav and back-to-top button
+                window.addEventListener('scroll', function() {
+                    const nav = document.querySelector('nav');
+                    if (window.scrollY > 50) {
+                        nav.classList.add('scrolled');
+                    } else {
+                        nav.classList.remove('scrolled');
+                    }
+                });
+        
+                document.querySelector('.back-to-top').addEventListener('click', function() {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                });
+            </script>
+
+</body>
+</html>
